@@ -1,0 +1,25 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: Meu Pet Viaja
+authors:
+  - family-names: Fernandes de Assis
+    given-names: Ana Carolina
+  - family-names: Fernandes de Assis
+    given-names: Daniela Sofia
+  - family-names: Ferreira de Jesus
+    given-names: Filipe
+  - family-names: Rodrigo Gonçalves
+    given-names: Lucas
+  - family-names: Gonçalves Costa
+    given-names: Thais Camila
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Bastos de Paula
+    given-names: Hugo
+keywords:
+  - Meu Pet Viaja
+  - Dicas de viagem petfriendly em Minas Gerais
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-dicas-de-viagem.git
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2023-06-30

@@ -1,0 +1,183 @@
+body {
+    height: 100vh; /* Define a altura do corpo como 100% da altura da viewport */
+  }
+
+  main {
+    display: grid;
+    place-items: center;
+    height: 100%; /* Define a altura da <main> como 100% da altura do corpo */
+  }
+
+footer {
+    margin-top: 250px;
+}
+
+#slide-container-est {
+    max-width: 1120px;
+    width: 100%;
+    height: 310px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    list-style: none;
+    z-index: 1;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-wrapper.glider-slide {
+    margin: 11px 20px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.container-est.card {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.glider.draggable {
+    overflow: hidden;
+    border-radius: 25px;
+    width: 93%;
+    height: 240px;
+    margin: 15px 40px;
+}
+
+.glider-track {
+    border-radius: 25px;
+    height: 200px;
+    align-items: stretch;
+}
+
+.container-est.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.glider-dot {
+    background-color: #6E93f7;
+    opacity: 1;
+    width: 6px;
+    height: 6px;
+    transition: .2s transform, .2s left;
+}
+
+.glider-dot.active {
+    background-color: #4070F4;
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
+}
+
+.glider-prev {
+    color: #6E93f7;
+    margin-top: 8px;
+    font-size: 50px !important;
+    margin-left: 29px;
+}
+
+.glider-next {
+    color: #6E93f7;
+    font-size: 50px !important;
+    margin-top: 8px;
+    margin-right: 29px;
+}
+
+.glider-prev:hover,
+.glider-next:hover {
+    color: #4070F4;
+    cursor: pointer;
+    font-size: 50px !important;
+    margin-top: 8px;
+}
+
+.glider-prev.disabled {
+    color: #6E93f7;
+    font-size: 50px !important;
+    margin-top: 8px;
+    margin-left: 29px;
+}
+
+.glider-next.disabled {
+    color: #6E93f7;
+    font-size: 50px !important;
+    margin-top: 8px;
+    margin-right: 29px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px black;
+    border-radius: 25px;
+}
+
+.container-dest:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+}
+
+.glider-container {
+    margin-bottom: 40px;
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+    height: auto;
+}
+
+.glider {
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.card-info {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.container-est:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+}
+
+#container-cidade {
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+    height: auto;
+}
+
+.foto_container{
+    display: block;
+}

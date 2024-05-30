@@ -1,0 +1,327 @@
+{
+  "cidades": [
+    {
+      "cidade": "Belo Horizonte",
+      "id": 1,
+      "imagem": "imagens/destinos/BH.jpg",
+      "alt": "BH",
+      "detalhes": "Belo Horizonte, capital de Minas Gerais, encanta os turistas com sua cultura, história e hospitalidade. Com museus, gastronomia tradicional e belas paisagens, a cidade oferece uma experiência única. Não deixe de visitar o Museu de Arte da Pampulha, provar o delicioso feijão tropeiro e explorar o Parque das Mangabeiras. A vida noturna agitada e a hospitalidade dos moradores tornam Belo Horizonte um destino imperdível. Venha desfrutar dessa cidade encantadora!"
+    },
+    {
+      "cidade": "Ouro Preto",
+      "id": 2,
+      "imagem": "imagens/destinos/ouro-preto.jpg",
+      "alt": "ouro-preto",
+      "detalhes": "Ouro Preto, em Minas Gerais, é uma cidade histórica encantadora, repleta de arquitetura colonial e igrejas barrocas. Com sua rica herança cultural, incluindo obras do escultor Aleijadinho, e sua bela paisagem natural, como o Parque Estadual do Itacolomi, Ouro Preto atrai turistas em busca de história e natureza. Além disso, a gastronomia local e a atmosfera intelectual da Universidade Federal de Ouro Preto complementam a experiência única que a cidade oferece. Descubra a magia de Ouro Preto e mergulhe na história de Minas Gerais."
+    },
+    {
+      "cidade": "Sete Lagoas",
+      "id": 3,
+      "imagem": "imagens/destinos/sete-lagoas.jpg",
+      "alt": "Sete Lagoas",
+      "detalhes": "Sete Lagoas, localizada em Minas Gerais, é um destino encantador para os turistas em busca de beleza natural e cultura. A cidade é famosa por seus lagos deslumbrantes, que oferecem atividades como passeios de barco e pesca esportiva. Além disso, Sete Lagoas possui uma rica cena artística e cultural, com museus, teatros e festivais. Os visitantes podem desfrutar da deliciosa culinária mineira e explorar belas trilhas e cachoeiras nas áreas naturais ao redor da cidade. Sete Lagoas é um local ideal para relaxar, desfrutar da natureza e mergulhar na autêntica cultura mineira."
+    },
+    {
+      "cidade": "Varginha",
+      "id": 4,
+      "imagem": "imagens/destinos/varginha.jpg",
+      "alt": "Varginha",
+      "detalhes": "Varginha é uma cidade acolhedora em Minas Gerais, conhecida pelo episódio do 'ET de Varginha'. Além disso, oferece belas paisagens naturais, como o Parque Municipal do Anta, e atrações culturais, como o Museu Municipal e a Casa da Cultura. A gastronomia local é deliciosa, com pratos típicos mineiros e cafeterias aconchegantes. A cidade também possui eventos populares, como a Expoagro e o Festival Nacional de Teatro. Descubra Varginha e aproveite a natureza, cultura e hospitalidade dessa encantadora cidade mineira."
+    },
+    {
+      "cidade": "Poços de Caldas",
+      "id": 5,
+      "imagem": "imagens/destinos/pocosDeCaldas.jpg",
+      "alt": "Poços de Caldas",
+      "detalhes": "Poços de Caldas, em Minas Gerais, é um destino turístico encantador conhecido por suas águas termais, belezas naturais e charme histórico. Os visitantes podem desfrutar de banhos termais, explorar parques e jardins, conhecer o patrimônio arquitetônico da cidade e se aventurar em atividades ao ar livre. Além disso, a gastronomia local é uma delícia. Descubra o encanto de Poços de Caldas e aproveite sua variedade de atrações turísticas."
+    },
+    {
+      "cidade": "Mariana",
+      "id": 6,
+      "imagem": "imagens/destinos/mariana.jpg",
+      "alt": "Poços de Caldas",
+      "detalhes": "Mariana, em Minas Gerais, é uma cidade histórica com um rico patrimônio arquitetônico e cultural. Os turistas podem explorar igrejas barrocas, ruas de pedra e casarões coloniais. A cidade também oferece o Museu Arquidiocesano de Arte Sacra e a Mina da Passagem, uma mina de ouro aberta à visitação. Além disso, a gastronomia local é uma delícia, com pratos típicos mineiros. Descubra a história e a beleza de Mariana, desfrute da culinária regional e mergulhe na cultura mineira."
+    },
+    {
+      "cidade": "Tiradentes",
+      "id": 7,
+      "imagem": "imagens/destinos/tiradentes.jpg",
+      "alt": "Tiradentes",
+      "detalhes": "Tiradentes, em Minas Gerais, é uma cidade encantadora com um centro histórico preservado e uma rica herança cultural. Os turistas podem explorar suas ruas de pedra, igrejas barrocas e casarões coloniais. A cidade oferece museus que contam a história da Inconfidência Mineira, além de uma cena cultural vibrante com ateliês de artistas locais e festivais de cinema e música. A gastronomia é uma atração imperdível, com restaurantes que servem pratos típicos e contemporâneos. A natureza ao redor proporciona paisagens deslumbrantes, trilhas e cachoeiras. Descubra a história, a cultura e a beleza de Tiradentes e aproveite sua atmosfera acolhedora e autêntica."
+    }
+  ],
+  "tipo-estabelecimento": [
+    {
+      "tipo": "Hospedagem",
+      "id": 1
+    },
+    {
+      "tipo": "Restaurante",
+      "id": 2
+    },
+    {
+      "tipo": "Estabelecimento privado",
+      "id": 3
+    },
+    {
+      "tipo": "Ponto Turístico",
+      "id": 4
+    }
+  ],
+  "estabelecimentos": [
+    {
+      "nome": "Dona Lucinha",
+      "tipo": "2",
+      "email": "donalucinha@donalucinha.com.br",
+      "telefone": "3121270788",
+      "endereco": "Rua Padre Odorico, 38 - São Pedro",
+      "cidade": "1",
+      "id": 1,
+      "estado": "MG",
+      "website": "www.donalucinha.com.br",
+      "instagram": "donalucinha",
+      "descricao": "O Restaurante Dona Lucinha se dedica a oferecer uma cozinha e um ambiente, que preservam o gosto e a cultura alimentar dos tempos coloniais de Minas Gerais. O Cardápio foi elaborado a partir de uma cuidadosa pesquisa da cultura alimentar de nossa gente. Nossa cozinha “espelha” o período de sua formação. Vale dizer: o ciclo do ouro e dos diamantes. Somos petfriendly, aceitamos animais de estimação.",
+      "foto": "imagens/destinos/dona-lucinha.jpg",
+      "alt": "Foto do restaurante Dona Lucinha"
+    },
+    {
+      "nome": "Hotel Ouro Minas",
+      "tipo": "1",
+      "email": "ourominas@ourominas.com.br",
+      "telefone": "31 3429-4001",
+      "endereco": "Av. Cristiano Machado, 4001",
+      "cidade": "1",
+      "id": 2,
+      "estado": "MG",
+      "website": "https://www.ourominas.com.br/",
+      "instagram": "https://www.instagram.com/hotelourominas/",
+      "descricao": "Ouro Minas Belo Horizonte. O seu hotel em BH.\nO hotel mais mineiro de BH, oferece conforto e segurança para quem vem a trabalho ou a lazer.\nCom a infraestrutura mais completa da cidade para realização de eventos corporativos.",
+      "foto": "https://i.imgur.com/JEzXkMF.jpg",
+      "alt": "Fachada do Hotel Ouro Minas com banner com nome do hotel"
+    },
+    {
+      "nome": "Lagoa da Pampulha",
+      "tipo": "4",
+      "email": "",
+      "telefone": "",
+      "endereco": "Av. Otacílio Negrão de Lima, s/n - Pampulha",
+      "cidade": "1",
+      "id": 3,
+      "estado": "MG",
+      "website": "",
+      "instagram": "",
+      "descricao": "A Lagoa da Pampulha é um conjunto arquitetônico e paisagístico projetado por Oscar Niemeyer, em 1943, na cidade de Belo Horizonte, Minas Gerais, Brasil. O conjunto foi a primeira intervenção urbanística de Niemeyer na cidade, que mais tarde seria marcada por sua influência.",
+      "foto": "imagens/destinos/lagoa-da-pampulha.jpg",
+      "alt": "Foto da Lagoa da Pampulha"
+    },
+    {
+      "nome": "Le Chalet - Fondue e Bistrô",
+      "tipo": "2",
+      "email": "",
+      "telefone": "31989091965",
+      "endereco": "Rua Conde de Bobadela, 124 - Sobreloja",
+      "cidade": "2",
+      "id": 4,
+      "estado": "MG",
+      "website": "",
+      "instagram": "",
+      "descricao": "Bem-vindos ao Le Chalet Fondue & Bistrô, um encantador bistrô localizado na histórica cidade de Ouro Preto, em Minas Gerais. Com um ambiente acolhedor e uma decoração inspirada em chalés alpinos, oferecemos uma experiência gastronômica única, destacando-se pelas deliciosas fondues de queijo, carne e chocolate. Desfrute de sabores tradicionais combinados com toques criativos, enquanto desfruta da rica história e arquitetura dessa cidade encantadora. Aceitamos animais.",
+      "foto": "imagens/destinos/le-chalet.jpg",
+      "alt": "Foto do Le Chalet - Fondue e Bistrô"
+    },
+    {
+      "nome": "San Diego Veredas Sete Lagoas",
+      "tipo": "1",
+      "email": "",
+      "telefone": "3137798300",
+      "endereco": "Av. Pref. Alberto Moura, 21500 - Eldorado",
+      "cidade": "3",
+      "id": 5,
+      "estado": "MG",
+      "website": "http://www.sandiegohoteis.com.br/",
+      "instagram": "",
+      "descricao": "O San Diego Suítes Veredas Sete Lagoas oferece 160 apartamentos confortáveis e decorados com muito bom gosto com toda a acessibilidade para PMR padrão na Rede Nobile. Todos os apartamentos oferecem mesa de trabalho, TV LED, internet Wi-Fi cortesia, ar condicionado, frigobar e secador de cabelo. O hotel permite pets.",
+      "foto": "imagens/destinos/san-diego.jpg",
+      "alt": "Foto do quarto do hotel San Diego Veredas Sete Lagoas"
+    },
+    {
+      "nome": "Nave Espacial",
+      "tipo": "4",
+      "email": "",
+      "telefone": "",
+      "endereco": "Praça Getúlio Vargas, s/n - Centro",
+      "cidade": "4",
+      "id": 6,
+      "estado": "MG",
+      "website": "",
+      "instagram": "",
+      "descricao": "A Nave Espacial é um monumento localizado na Praça Getúlio Vargas, no centro da cidade de Varginha, no estado de Minas Gerais, Brasil. Foi inaugurada em 2001.A Nave Espacial de Varginha é uma reminiscência do incidente de Varginha, um suposto pouso de OVNI, que ocorreu em 20 de janeiro de 1996.",
+      "foto": "imagens/destinos/nave-et-varginha.jpg",
+      "alt": "Foto da Nave Espacial"
+    },
+    {
+      "nome": "Praça Minas Gerais",
+      "tipo": "4",
+      "email": "",
+      "telefone": "",
+      "endereco": "Praça Minas Gerais - Centro Histórico",
+      "cidade": "6",
+      "id": 7,
+      "estado": "MG",
+      "website": "",
+      "instagram": "",
+      "descricao": "A Praça Minas Gerais localiza-se no centro do município de Mariana e faz parte do patrimônio cultural do estado de Minas Gerais. É cercada por importantes monumentos históricos do período colonial, fez parte da rota do ouro e é um importante ponto turístico do município.",
+      "foto": "imagens/destinos/praca-mg.jpg",
+      "alt": "Foto da praça Minas Gerais"
+    },
+    {
+      "nome": "Restaurante Dona Xica",
+      "tipo": "2",
+      "email": "cdinalli@bol.com.br",
+      "telefone": "3233551770",
+      "endereco": "Rua Vereador João Rosa da Silva, 950, Jardim Capote",
+      "cidade": "7",
+      "id": 8,
+      "estado": "MG",
+      "website": "",
+      "instagram": "",
+      "descricao": "O Restaurante Dona Xica se dedica a oferecer uma cozinha e um ambiente, que preservam o gosto e a cultura alimentar de Minas Gerais. Somos petfriendly, aceitamos animais de estimação.",
+      "foto": "imagens/destinos/donaxica.jpg",
+      "alt": "Foto do restaurante Dona Xica"
+    } 
+  ],
+  "viajante": [
+    {
+      "id": 1,
+      "nome": "Sara Vieira",
+      "usuario": "sarav",
+      "email": "sara.vieira@gmail.com",
+      "senha": "sara2780",
+      "foto": "https://i.imgur.com/z7mkc1I.jpg"
+    },
+    {
+      "nome": "Ana Carolina Fernandes de Assis",
+      "usuario": "assiscarolina18",
+      "email": "assiscarolina18@gmail.com",
+      "id": 2,
+      "senha": "1234",
+      "foto": "https://i.imgur.com/8ukbEwk.jpg"
+    },
+    {
+      "nome": "Thais camila",
+      "usuario": "this.thais",
+      "email": "thais@teste.com.br",
+      "id": 3,
+      "senha": "1234",
+      "foto": ""
+    },
+    {
+      "nome": "lucas",
+      "usuario": "lucas45",
+      "email": "lucasrg274@gmail.com",
+      "id": 4,
+      "senha": "12345",
+      "foto": ""
+    },
+    {
+      "nome": "Lucas Rodrigo Gonçalves",
+      "usuario": "lucasr45",
+      "email": "lucasrg274@gmail.com",
+      "id": 5,
+      "senha": "12345678",
+      "foto": ""
+    },
+    {
+      "nome": "Lucas Rodrigo Gonçalves",
+      "usuario": "lucasr45",
+      "email": "lucasrg274@gmail.com",
+      "id": 6,
+      "senha": "12345678",
+      "foto": ""
+    },
+    {
+      "nome": "Thais de Oliveira Alves Inez",
+      "usuario": "tata",
+      "email": "tata@teste.com",
+      "id": 7,
+      "senha": "123",
+      "foto": ""
+    },
+    {
+      "nome": "Thiago Borges",
+      "usuario": "Thi.cht",
+      "email": "thiagopetviaja@gmail.com",
+      "id": 8,
+      "senha": "1234",
+      "foto": "https://i.imgur.com/of35ipY.jpg"
+    },
+    {
+      "nome": "Luana Lucia",
+      "usuario": "luana",
+      "email": "luana@luana.com.br",
+      "id": 9,
+      "senha": "1234",
+      "foto": "https://i.imgur.com/3E3o6u6.jpg"
+    },
+    {
+      "nome": "Mirian Carla",
+      "usuario": "Mirian",
+      "email": "Mirian@mirian.com.br",
+      "id": 10,
+      "senha": "1234",
+      "foto": "https://i.imgur.com/HFe0CL6.jpg"
+    }
+  ],
+  "depoimentos": [
+    {
+      "id": 1,
+      "nome": "Thiago Borges",
+      "avaliacao": "Encantadora estadia em um hotel pet friendly! Acolhimento excepcional para os animais de estimação, comodidades excelentes e equipe simpática. Recomendo!",
+      "nota": 5,
+      "foto": "https://i.imgur.com/of35ipY.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Luana Lucia",
+      "avaliacao": "Amei minha estadia em um lugar pet friendly incrível! O ambiente era acolhedor, a equipe era\n              atenciosa e meu peludo foi tratado como um rei. Recomendo a todos!",
+      "nota": 4,
+      "foto": "https://i.imgur.com/3E3o6u6.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Mirian Carla",
+      "avaliacao": "Encontrei o paraíso dos animais em uma hospedagem pet friendly! Meu pet teve a liberdade de explorar, brincar e até fez novos amigos. Foi uma experiência maravilhosa para nós dois. Recomendo de coração!",
+      "nota": "3",
+      "foto": "https://i.imgur.com/HFe0CL6.jpg"
+    },
+    {
+      "id": 5,
+      "nome": "Sara Vieira",
+      "avaliacao": "      A hospedagem foi um sucesso. Eu e meu pet fomos muito bem recebidos por todos e com certeza iremos voltar mais vezes.",
+      "nota": "5",
+      "foto": "https://i.imgur.com/z7mkc1I.jpg"
+    },
+    {
+      "id": 6,
+      "nome": "Sara Vieira",
+      "avaliacao": "      A hospedagem foi um sucesso. Eu e meu pet fomos muito bem recebidos por todos e com certeza iremos voltar mais vezes.",
+      "nota": "5",
+      "foto": "https://i.imgur.com/z7mkc1I.jpg"
+    },
+    {
+      "id": 7,
+      "nome": "Sara Vieira",
+      "avaliacao": "      A hospedagem foi um sucesso. Eu e meu pet fomos muito bem recebidos por todos e com certeza iremos voltar mais vezes.",
+      "nota": "5",
+      "foto": "https://i.imgur.com/z7mkc1I.jpg"
+    }
+    ,
+    {
+      "id": 8,
+      "nome": "Sara Vieira",
+      "avaliacao": "      A hospedagem foi um sucesso. Eu e meu pet fomos muito bem recebidos por todos e com certeza iremos voltar mais vezes.",
+      "nota": "5",
+      "foto": ""
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+/**BODY*/
+#imagem-pet {
+    display: block;
+    margin: 0% auto;
+    width: 60%;
+}
+
+
+#viajante {
+    display: inline-block;
+    font-family: 'Merriwheater', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    align-content: center;
+    background-color: #0097B2;
+    min-width: 150px;
+    font-size: 15px;
+}
+
+#estabelecimento {
+    display: inline-block;
+    font-family: 'Merriwheater', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    align-content: center;
+    margin-left: 50px;
+    background-color: #0097B2;
+    font-size: 15px;
+}
+    
+#titulo {
+        font-family: 'Alegrya bold', sans-serif;
+        font-size: 50px;
+        color: #000000;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+#nome {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-family: 'Merriwheater', sans-serif;
+    font-size: 15px;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#usuario {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-family: 'Merriwheater', sans-serif;
+    font-size: 15px;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#email {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-family: 'Merriwheater', sans-serif;
+    font-size: 15px;
+    color: #000000;
+}
+
+#senha {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-family: 'Merriwheater', sans-serif;
+    font-size: 15px;
+    color: #000000;
+}
+
+    #confirmarSenha {
+        display: inline-block;
+        margin-right: 5px;
+        margin-left: 5px;
+        font-family: 'Merriwheater', sans-serif;
+        font-size: 15px;
+        color: #000000;    
+
+}
+
+#fotoperfil {
+    display: none;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-family: 'Merriwheater', sans-serif
+    sans-serif;
+    font-size: 15px;
+    color: #000000;
+}
+
+.fotoperfil_span {
+width: 300px;
+aspect-ratio: 720/720px;
+ background-color: #FFFFFF;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color:#000000;
+ border: 2px dashed #000000;
+ cursor: pointer;
+font-family: 'Merriwheater', sans-serif;
+transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.fotoperfil_span:hover {
+background-color: #0097B2;
+color:#FFFFFF 
+}
+
+#prev-foto-perfil {
+margin-top: 10px;
+}
+
+#enviar {
+    display: inline-block;
+    font-family: 'Merriwheater', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    align-content: center;
+    min-width: 100px;
+    font-size: 15px;
+}
+
+#cancelar {
+    display: inline-block;
+    font-family: 'Merriwheater', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    align-content: center;
+    margin-left: 50px;
+    font-size: 15px;
+}
+
+
+
+#checkbox {
+    margin-right: 4px;
+    font-family: 'Merriwheater', sans-serif;
+}
+
+/**BODY*/
+
+/**Responsividade*/
+
+@media screen and (min-width: 200px) and (max-width: 1000px) 
+{
+    #imagem-pet 
+    {
+        display: flex;
+        justify-content: center !important;
+        width: 0% !important;
+        
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 850px) 
+{
+    #viajante 
+    {
+        margin-left: auto;
+        align-content: center;
+        margin-top: 5% !important;
+        
+    }
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 850px) 
+{
+    #estabelecimento 
+    {
+        margin-left: auto;
+        align-content: center;
+        margin-top: 5% !important;
+        margin-right: auto;
+
+        
+    }
+}

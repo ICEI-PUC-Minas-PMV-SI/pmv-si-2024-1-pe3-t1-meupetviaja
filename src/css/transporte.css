@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+.title {
+    margin-left: 5%;
+}
+
+.title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: initial;
+}
+
+.title #info {
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+}
+
+main>h1 {
+    font-family: var(--font-title);
+    margin: 50px 0px;
+}
+
+.container {
+    width: 45%;
+    min-width: 300px;
+}
+
+.wrapper {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
+}
+
+.toggle,
+.content {
+    font-family: "Poppins", sans-serif;
+}
+
+.toggle {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #111130;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+.content {
+    position: relative;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 30px;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.content h3 {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.card {
+    min-width: 200px;
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card .details {
+    display: none;
+    margin-top: 10px;
+}
+
+.card.expanded .details {
+    display: block;
+}
+
+.card.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    z-index: 1000; /* Aumentar para garantir que está acima do cabeçalho e rodapé */
+    background: white;
+    padding: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
+    max-height: 80vh; /* Limitar a altura máxima */
+    overflow-y: auto; /* Adicionar rolagem vertical se necessário */
+}
+
+/* Estilos para o ícone de fechar */
+.close-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #999;
+    cursor: pointer;
+}
+
+.carousel-button {
+    background-color: #fff;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Adiciona uma margem superior para separar os carrosséis */
+.carousel-container {
+    margin-top: 50px;
+}
+
+/* Adiciona estilos específicos para os botões de navegação de cada carrossel */
+.carousel-button {
+    background-color: #fff;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+#result {
+    margin: 20px;
+}
+
+#infoFooter {
+    margin-left: 0 !important;
+}

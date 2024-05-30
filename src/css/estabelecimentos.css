@@ -1,0 +1,32 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 15px;
+  }
+
+footer {
+    margin-top: 80px;
+}
+
+.foto_container{
+    display: block;
+}
+
+.depoimentos{
+    text-align: left;
+    border: #0097b2 solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 20px;      
+}
+
+#depoimento {
+    height: 100px;
+}
+
+form {
+    width: 70%;
+    margin: auto;
+}
