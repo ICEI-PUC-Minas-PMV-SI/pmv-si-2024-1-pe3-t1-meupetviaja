@@ -90,104 +90,122 @@ document.addEventListener("DOMContentLoaded", function () {
                         if (estabelecimento.instagram) {
                             est += `<p>Instagram: <a href="${estabelecimento.instagram}" target="_blank">${estabelecimento.instagram}</a></p>`;
                         }
-    
-
-                        containerEstabelecimento.innerHTML = est;
-
+  
+                        containerEstabelecimento.innerHTML = est
+                      
                         fetch("https://db-json-kp7o.vercel.app/depoimentos")
-                              .then(response => response.json())
-                              .then(data => {
-                                const container = document.getElementById("locais-wrap");
-                                const cardsWrap = document.createElement('div');
-                                cardsWrap.classList.add('locais-wrap');
-                                container.appendChild(cardsWrap);
+                        .then(response => response.json())
+                        .then(data => {
+                          const container = document.getElementById("EST-wrap");
+                          let cardsWrap = container.querySelector('.EST-wrap');
 
-                                const cardWidth = 33; // Porcentagem de largura para cada card
-                                const totalCards = data.length;
-                                const visibleCards = 3;
-                                let currentIndex = 0;
+                          if (!cardsWrap) {
+                            cardsWrap = document.createElement('div');
+                            cardsWrap.classList.add('EST-wrap');
+                            container.appendChild(cardsWrap);
+                          } else {
+                            cardsWrap.innerHTML = '';
+                          }
 
-                                const createCard = (depoimento) => {
-                                  const card = document.createElement('div');
-                                  card.classList.add('local');
+                            const cardWidth = 33; // Porcentagem de largura para cada card
+                            const totalCards = data.length;
+                            const visibleCards = 3;
+                            let currentIndex = 0;
 
-                                  const fotoDiv = document.createElement('div');
-                                  fotoDiv.classList.add('local_img');
-                                  const foto = document.createElement('img');
-
-                                  if (depoimento.foto) {
-                                    foto.src = depoimento.foto;
-                                  } else {
-                                    foto.src = 'imagens/user.png';
+                            const createCard = (depoimento) => {
+                              const card = document.createElement('div');
+                              card.classList.add('local');
+                          
+                              const fotoDiv = document.createElement('div');
+                              fotoDiv.classList.add('local_img');
+                              const foto = document.createElement('img');
+                          
+                              if (depoimento.foto) {
+                                  foto.src = depoimento.foto;
+                              } else {
+                                  foto.src = 'imagens/user.png';
+                              }
+                          
+                              foto.alt = depoimento.alt;
+                          
+                              fotoDiv.appendChild(foto);
+                              card.appendChild(fotoDiv);
+                          
+                              const nota = document.createElement('div');
+                              nota.classList.add('nota');
+                          
+                              for (var j = 1; j <= depoimento.nota; j++) {
+                                  var icon = document.createElement('i');
+                                  icon.classList.add('fa-solid', 'fa-paw');
+                                  nota.appendChild(icon);
+                              }
+                          
+                              card.appendChild(nota);
+                          
+                              const nome = document.createElement('div');
+                              nome.classList.add('nome');
+                              const nomeUsuario = document.createElement('h3');
+                              nomeUsuario.textContent = depoimento.nome;
+                              const avaliacao = document.createElement('p');
+                              avaliacao.textContent = depoimento.avaliacao;
+                          
+                              card.appendChild(nome);
+                              nome.appendChild(nomeUsuario);
+                              nome.appendChild(avaliacao);
+                          
+                              // Adicionar botão de denúncia a cada card
+                              const denunciaButton = document.createElement('button');
+                              denunciaButton.innerHTML = '<i class="fa-solid fa-exclamation-triangle fa-lg"></i>';
+                              denunciaButton.classList.add('denuncia-button');
+                              denunciaButton.addEventListener('click', () => {
+                                  const motivo = prompt("Informe o motivo da denúncia:");
+                                  if (motivo) {
+                                      alert("Denúncia enviada com sucesso: " + motivo);
                                   }
-
-                                  foto.alt = depoimento.alt;
-
-                                  fotoDiv.appendChild(foto);
-                                  card.appendChild(fotoDiv);
-
-                                  const nota = document.createElement('div');
-                                  nota.classList.add('nota');
-
-                                  var i = depoimento.nota;
-
-                                  for (var j = 1; j <= i; j++) {
-                                    var icon = document.createElement('i');
-                                    icon.classList.add('fa-solid', 'fa-paw');
-                                    nota.appendChild(icon);
-                                    card.appendChild(nota);
-                                  }
-
-                                  const nome = document.createElement('div');
-                                  nome.classList.add('nome');
-                                  const nomeUsuario = document.createElement('h3');
-                                  nomeUsuario.textContent = depoimento.nome;
-                                  const avaliacao = document.createElement('p');
-                                  avaliacao.textContent = depoimento.avaliacao;
-
-                                  card.appendChild(nome);
-                                  nome.appendChild(nomeUsuario);
-                                  nome.appendChild(avaliacao);
-
-                                  return card;
-                                };
-
-                                const renderCards = (startIndex) => {
-                                  cardsWrap.innerHTML = '';
-
-                                  for (let i = startIndex; i < startIndex + visibleCards; i++) {
-                                    if (i >= totalCards) break;
-                                    const depoimento = data[i];
-                                    const card = createCard(depoimento);
-                                    cardsWrap.appendChild(card);
-                                  }
-                                };
-
-                                renderCards(currentIndex);
-                                ///botoes 
-                                const prevButton = document.createElement('button');
-                                const nextButton = document.createElement('button');
-
-                                prevButton.innerHTML = '<i class="fa-solid fa-chevron-left fa-lg"></i>';
-                                nextButton.innerHTML = '<i class="fa-solid fa-chevron-right fa-lg"></i>';
-                                prevButton.classList.add('carousel-button', 'prev');
-                                nextButton.classList.add('carousel-button', 'next');
-
-
-                                prevButton.addEventListener('click', () => {
-                                  currentIndex = Math.max(currentIndex - 1, 0);
-                                  renderCards(currentIndex);
-                                });
-
-                                nextButton.addEventListener('click', () => {
-                                  const maxIndex = Math.max(totalCards - visibleCards, 0);
-                                  currentIndex = Math.min(currentIndex + 1, maxIndex);
-                                  renderCards(currentIndex);
-                                });
-
-                                container.appendChild(prevButton);
-                                container.appendChild(nextButton);
                               });
+                              card.appendChild(denunciaButton);
+                          
+                              return card;
+                          };
+                          
+
+                            const renderCards = (startIndex) => {
+                              cardsWrap.innerHTML = '';
+
+                              for (let i = startIndex; i < startIndex + visibleCards; i++) {
+                                if (i >= totalCards) break;
+                                const depoimento = data[i];
+                                const card = createCard(depoimento);
+                                cardsWrap.appendChild(card);
+                              }
+                            };
+
+                            renderCards(currentIndex);
+                            ///botoes 
+                            const prevButton = document.createElement('button');
+                            const nextButton = document.createElement('button');
+
+                            prevButton.innerHTML = '<i class="fa-solid fa-chevron-left fa-lg"></i>';
+                            nextButton.innerHTML = '<i class="fa-solid fa-chevron-right fa-lg"></i>';
+                            prevButton.classList.add('carousel-button', 'prev');
+                            nextButton.classList.add('carousel-button', 'next');
+
+
+                            prevButton.addEventListener('click', () => {
+                              currentIndex = Math.max(currentIndex - 1, 0);
+                              renderCards(currentIndex);
+                            });
+
+                            nextButton.addEventListener('click', () => {
+                              const maxIndex = Math.max(totalCards - visibleCards, 0);
+                              currentIndex = Math.min(currentIndex + 1, maxIndex);
+                              renderCards(currentIndex);
+                            });
+
+                            container.appendChild(prevButton);
+                            container.appendChild(nextButton);
+                          });
+
                     })
                     .catch(error => {
                         containerEstabelecimento.innerHTML = "<h1>Erro ao obter informações do estabelecimento</h1>";
@@ -199,6 +217,8 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     }
   });
+
+  
 
 
 
