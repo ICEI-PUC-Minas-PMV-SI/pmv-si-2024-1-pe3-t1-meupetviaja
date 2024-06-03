@@ -105,100 +105,114 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error('Ocorreu um erro ao obter os dados do JSON ou inicializar o Swiper:', error);
     });
 
-  fetch("https://db-json-kp7o.vercel.app/depoimentos")
+    fetch('data/destinos.json')
     .then(response => response.json())
     .then(data => {
       const container = document.getElementById("locais-wrap");
+      if (!container) {
+        console.error("Elemento com ID 'locais-wrap' não encontrado.");
+        return;
+      }
       const cardsWrap = document.createElement('div');
       cardsWrap.classList.add('locais-wrap');
       container.appendChild(cardsWrap);
-
+  
       const cardWidth = 33; // Porcentagem de largura para cada card
-      const totalCards = data.length;
+      const depoimentos = data.depoimentos; // Acessa a propriedade "depoimentos"
+      if (!depoimentos || !Array.isArray(depoimentos)) {
+        console.error("Propriedade 'depoimentos' não encontrada ou não é um array.");
+        return;
+      }
+      const totalCards = depoimentos.length; // Usa o comprimento de "depoimentos"
       const visibleCards = 3;
       let currentIndex = 0;
-
+  
       const createCard = (depoimento) => {
-        const card = document.createElement('div');
-        card.classList.add('local');
-
-        const fotoDiv = document.createElement('div');
-        fotoDiv.classList.add('local_img');
-        const foto = document.createElement('img');
-
-        if (depoimento.foto) {
-          foto.src = depoimento.foto;
-        } else {
-          foto.src = 'imagens/user.png';
-        }
-
-        foto.alt = depoimento.alt;
-
-        fotoDiv.appendChild(foto);
-        card.appendChild(fotoDiv);
-
-        const nota = document.createElement('div');
-        nota.classList.add('nota');
-
-        var i = depoimento.nota;
-
-        for (var j = 1; j <= i; j++) {
-          var icon = document.createElement('i');
-          icon.classList.add('fa-solid', 'fa-paw');
-          nota.appendChild(icon);
-          card.appendChild(nota);
-        }
-
-        const nome = document.createElement('div');
-        nome.classList.add('nome');
-        const nomeUsuario = document.createElement('h3');
-        nomeUsuario.textContent = depoimento.nome;
-        const avaliacao = document.createElement('p');
-        avaliacao.textContent = depoimento.avaliacao;
-
-        card.appendChild(nome);
-        nome.appendChild(nomeUsuario);
-        nome.appendChild(avaliacao);
-
-        return card;
+          const card = document.createElement('div');
+          card.classList.add('local');
+  
+          const fotoDiv = document.createElement('div');
+          fotoDiv.classList.add('local_img');
+          const foto = document.createElement('img');
+  
+          if (depoimento.foto) {
+            foto.src = depoimento.foto;
+          } else {
+            foto.src = 'imagens/user.png';
+          }
+  
+          foto.alt = depoimento.alt;
+  
+          fotoDiv.appendChild(foto);
+          card.appendChild(fotoDiv);
+  
+          const nota = document.createElement('div');
+          nota.classList.add('nota');
+  
+          var i = depoimento.nota;
+  
+          for (var j = 1; j <= i; j++) {
+            var icon = document.createElement('i');
+            icon.classList.add('fa-solid', 'fa-paw');
+            nota.appendChild(icon);
+            card.appendChild(nota);
+          }
+  
+          const nome = document.createElement('div');
+          nome.classList.add('nome');
+          const nomeUsuario = document.createElement('h3');
+          nomeUsuario.textContent = depoimento.nome;
+          const avaliacao = document.createElement('p');
+          avaliacao.textContent = depoimento.avaliacao;
+  
+          card.appendChild(nome);
+          nome.appendChild(nomeUsuario);
+          nome.appendChild(avaliacao);
+  
+          return card;
       };
-
+  
       const renderCards = (startIndex) => {
         cardsWrap.innerHTML = '';
-
+  
         for (let i = startIndex; i < startIndex + visibleCards; i++) {
           if (i >= totalCards) break;
-          const depoimento = data[i];
+          const depoimento = depoimentos[i]; // Usa o índice em "depoimentos"
           const card = createCard(depoimento);
           cardsWrap.appendChild(card);
         }
       };
-
+  
       renderCards(currentIndex);
+  
       ///botoes 
       const prevButton = document.createElement('button');
       const nextButton = document.createElement('button');
-
+  
       prevButton.innerHTML = '<i class="fa-solid fa-chevron-left fa-lg"></i>';
       nextButton.innerHTML = '<i class="fa-solid fa-chevron-right fa-lg"></i>';
       prevButton.classList.add('carousel-button', 'prev');
       nextButton.classList.add('carousel-button', 'next');
-
-
+  
       prevButton.addEventListener('click', () => {
         currentIndex = Math.max(currentIndex - 1, 0);
         renderCards(currentIndex);
       });
-
+  
       nextButton.addEventListener('click', () => {
         const maxIndex = Math.max(totalCards - visibleCards, 0);
         currentIndex = Math.min(currentIndex + 1, maxIndex);
         renderCards(currentIndex);
       });
-
+  
       container.appendChild(prevButton);
       container.appendChild(nextButton);
+    })
+    .catch(error => {
+      console.error("Erro ao carregar o JSON: ", error);
     });
+  
+
 
 
 
