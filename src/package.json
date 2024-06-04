@@ -1,4 +1,11 @@
 {
+  "name": "meu-projeto",
+  "version": "1.0.0",
+  "description": "Uma descrição do seu projeto",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
   "dependencies": {
     "express": "^4.19.2",
     "mongoose": "^8.4.1"
