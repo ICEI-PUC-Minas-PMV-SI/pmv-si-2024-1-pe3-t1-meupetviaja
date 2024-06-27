@@ -83,37 +83,101 @@
       </nav>
     </div>
 </header>
-    <main>
-
-      <script type="text/javascript">
-        var counter = 1;
-        setInterval(function(){
-          document.getElementById('radio' + counter).checked = true;
-          counter++;
-          if(counter > 4){
-            counter = 1;
-          }
-        }, 5000);
-        </script>
-
-  <!--sobre nos starts-->
-  <div class="container">
-    <h3 class="mt-3 pb-3 mb-4 font-italic border-bottom">
+<main>
+  <!-- História -->
+  <div class="corpo">
+    <h3 class="mt-5 pb-3 mb-4 font-weight-bold border-bottom">
       História
-   </h3>
-   <h4 class="text">O projeto “Meu Pet Viaja” foi idealizado na disciplina “Projeto: Aplicações Web” no primeiro semestre da graduação EAD de Sistemas de Informação, da PUC Minas, pelos alunos Ana Carolina Assis, Daniela Assis, Felipe Jesus, Lucas Gonçalves e Thaís Costa com a orientação do professor Hugo de Paula Bastos. 
+    </h3>
+    <p class="font-italic">
+      O projeto “Meu Pet Viaja” foi idealizado na disciplina “Projeto: Aplicações Web” no primeiro semestre da graduação EAD de Sistemas de Informação, da PUC Minas, pelos alunos Ana Carolina Assis, Daniela Assis, Felipe Jesus, Lucas Gonçalves e Thaís Costa com a orientação do professor Hugo de Paula Bastos.
+    </p>
+    <p class="font-italic">
+      A escolha do tema se deve à percepção dos integrantes de que havia pouca informação disponível e de fácil acesso sobre viagens com animais de estimação, uma vez que alguns dos membros do grupo, que também são donos de pet, já desejaram viajar com seus animais antes, mas encontraram vários empecilhos.
+    </p>
+    <p class="font-italic">
+        No eixo três, decidimos melhorar o site trazendo novas funcionalidades:
+        Página de Usuário, Permitindo que você gerencie seu perfil e personalize suas informações.
+        Denúncias de Comentários em Estabelecimentos, Garantindo um ambiente seguro e confiável para todos os usuários.
+        Reformulação da Página Transporte seu Pet, Para tornar mais fácil encontrar informações sobre transporte para seu animal.
+        Implementação de API, Para integração com outras plataformas e serviços.
+    <p class="font-italic">
+        Estamos entusiasmados em contar com os novos desenvolvedores Daniela Sofia Fernandes de Assis, Letícia Oliveira Aquino, Lucas Henrique Oliveira Prado, Thais Camila Gonçalves Costa, e Lucas Peres Dias Costa, que estão contribuindo com suas habilidades para enriquecer ainda mais a experiência do usuário.
+    </p>
 
-   <h4 class="text">A escolha do tema se deve a percepção dos integrantes de que havia pouca informação disponível e de fácil acesso sobre viagens com animais de estimação, uma vez que alguns dos membros do grupo, que também são donos de pet, já desejaram viajar com seus animais antes, mas encontraram vários empecilhos.</h4>
+    <div>
+      <h3 class="mt-5 pb-3 mb-4 font-weight-bold border-bottom">
+        Objetivo
+      </h3>
+      <p class="font-italic">
+        Nosso objetivo com esse projeto é criar uma plataforma completa e acessível que ofereça informações úteis e dicas práticas para quem viaja com seu pet por Minas Gerais. Nosso compromisso é garantir que sua experiência seja não apenas conveniente, mas também segura e enriquecedora para você e seu animal de estimação. Queremos ser seu guia confiável, fornecendo orientações detalhadas desde a escolha de destinos pet-friendly até cuidados específicos durante a viagem. Acreditamos que cada momento compartilhado com seu pet deve ser desfrutado ao máximo, com a certeza de que estamos aqui para ajudar em cada passo da jornada.
+      </p>
+    </div>
+
+    <div class="about-section">
+      <h3 class="mt-5 pb-3 mb-4 font-weight-bold border-bottom">
+          Sobre o Site
+      </h3>
+      <!-- Layout com imagem à esquerda -->
+      <div class="about-content left-image">
+          <div class="about-image">
+              <img src="imagens/sobre-sobre1.png" alt="Descrição da imagem">
+          </div>
+          <div class="about-text">
+              <p class="font-italic">
+                Na página inicial, você encontrará alguns atalhos estratégicos para navegar pelo nosso site com facilidade. Queremos simplificar sua experiência desde o primeiro acesso, oferecendo atalhos diretos para as principais seções e recursos que ajudarão você a explorar tudo o que oferecemos.
+              </p>
+          </div>
+      </div>
+  
+      <!-- Layout com imagem à direita -->
+      <div class="about-content right-image">
+          <div class="about-text">
+              <p class="font-italic">
+                Na página 'Transporte seu Pet', você encontrará uma seleção cuidadosa de cards contendo dicas valiosas e informações essenciais para garantir o transporte seguro e confortável do seu pet durante toda a viagem. Nosso objetivo é proporcionar a você orientações detalhadas sobre como preparar seu pet para viagens, escolher o meio de transporte adequado, garantir conforto durante o trajeto e lidar com possíveis desafios que possam surgir ao longo do caminho.
+              </p>
+          </div>
+          <div class="about-image">
+              <img src="imagens/sobre-sobre2.png" alt="Descrição da imagem">
+          </div>
+      </div>
+      <!-- Layout com imagem à esquerda -->
+      <div class="about-content left-image">
+        <div class="about-image">
+            <img src="imagens/sobre-sobre3.png" alt="Descrição da imagem">
+        </div>
+        <div class="about-text">
+            <p class="font-italic">
+              Na página 'Destinos', você encontrará uma cuidadosa seleção dos melhores lugares e estabelecimentos em Minas Gerais que são pet-friendly, juntamente com informações detalhadas de contato. Nosso objetivo é facilitar sua busca por locais onde você e seu pet serão bem-vindos, oferecendo uma lista abrangente de destinos que inclui desde hotéis e restaurantes até parques e atrações turísticas. Cada entrada é acompanhada por informações úteis para que você possa planejar sua visita com confiança, sabendo que seu pet será recebido com carinho e cuidado em cada lugar recomendado.
+            </p>
+        </div>
+    </div>
+    <!-- Layout com imagem à direita -->
+    <div class="about-content right-image">
+      <div class="about-text">
+          <p class="font-italic">
+            No final da página, você encontrará um botão dedicado para cadastrar seu lugar preferido ou seu estabelecimento que é pet-friendly. Valorizamos a sua contribuição para enriquecer nossa comunidade de viajantes com pets, permitindo que você compartilhe suas descobertas e recomendações. Ao clicar no botão, você será guiado através de um processo simples para fornecer informações essenciais sobre o local, como serviços oferecidos, políticas pet-friendly, contato e outras detalhes relevantes. Sua participação ajuda a construir uma rede ainda mais completa e acolhedora para todos os amantes de viagens com seus animais de estimação em Minas Gerais.
+          </p>
+      </div>
+      <div class="about-image">
+          <img src="imagens/sobre-sobre4.png" alt="Descrição da imagem">
+      </div>
   </div>
-  <div class="container">
-    <h3 class="mt-3 pb-3 mb-4 font-italic border-bottom">
-      Objetivo
-   </h3>
-   <h4 class="text">Nosso objetivo com esse projeto é facilitar o acesso a informações úteis e dicas práticas sobre viagem com pet em Minas Gerais. Desejamos que a sua experiência seja mais agradável e segura para você e seu animal de estimação.</h4>
+  <div class="about-content left-image">
+    <div class="about-image">
+        <img src="imagens/sobre-sobre5.png" alt="Descrição da imagem">
+    </div>
+    <div class="about-text">
+        <p class="font-italic">
+          Na página 'Entre', você pode criar sua conta ou fazer login para aproveitar todas as funcionalidades do site, incluindo a capacidade de fazer comentários e interagir plenamente com nossa comunidade. Ao criar sua conta, você terá acesso exclusivo a recursos personalizados, como salvar seus destinos favoritos, acompanhar suas contribuições e participar de discussões sobre viagens com pets. Estar logado permite uma experiência mais integrada e personalizada, garantindo que você aproveite ao máximo todas as informações e recursos disponíveis em nosso site.
+        </p>
+    </div>
+</div>
+  </div>
   </div>
 
-  <!--footer starts-->
 </main>
+
 <footer class="section footer-classic context-dark bg-image" style="background-color: #0097b2">
   <div class="container">
     <div class="row row-30">
