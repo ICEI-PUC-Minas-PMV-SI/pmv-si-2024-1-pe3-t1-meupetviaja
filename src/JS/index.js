@@ -247,40 +247,28 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+
 function deslogar() {
   // Limpar o sessionStorage e remover todos os dados
   sessionStorage.clear();
-  if (Object.keys(sessionStorage).length === 0) {
-    const divEsconder = document.getElementById('usuarioLogado');
-    if (divEsconder) {
-      divEsconder.style.display = 'none';
-    }
+  
+  // Esconder a div de usuário logado, se existir
+  const divUsuarioLogado = document.getElementById('usuarioLogado');
+  if (divUsuarioLogado) {
+    divUsuarioLogado.style.display = 'none';
   }
-  const esconderEntre = document.getElementById('entre');
-  if (esconderEntre) {
-    esconderEntre.style.display = 'block';
+  
+  // Esconder a página usuario.html, se existir
+  const paginaUsuario = document.getElementById('usuario');
+  if (paginaUsuario) {
+    paginaUsuario.style.display = 'none';
   }
-}
-
-function ajustarLayout() {
-  const larguraJanela = window.innerWidth;
-
-  if (larguraJanela >= 240 && larguraJanela <= 615) {
-    const divUsuarioLogado = document.getElementById('usuarioLogado');
-    const navbarContent = document.getElementById('navbarToggleExternalContent');
-
-    if (divUsuarioLogado && navbarContent) {
-      navbarContent.insertBefore(divUsuarioLogado, navbarContent.firstChild);
-    }
+  
+  // Mostrar a página entre, se existir
+  const paginaEntre = document.getElementById('entre');
+  if (paginaEntre) {
+    paginaEntre.style.display = 'block';
   }
 }
-
-// Chamar a função quando a página carregar e quando a janela for redimensionada
-window.addEventListener('load', ajustarLayout);
-window.addEventListener('resize', ajustarLayout);
-
-const iconeDeslogar = document.getElementById('iconeDeslogar');
-iconeDeslogar.addEventListener('click', deslogar);
-
-
-

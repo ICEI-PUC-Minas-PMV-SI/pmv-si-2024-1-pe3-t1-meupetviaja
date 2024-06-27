@@ -331,6 +331,23 @@ color: cadetblue;
   margin-top: 85px;
 }
 
+.love .image-t {
+  display: flex;
+  flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha se não couberem na largura */
+}
+
+.love .image-t img {
+  width: 200px; /* Tamanho padrão das imagens */
+  height: auto; /* Altura automática para manter a proporção */
+  margin-right: 10px; /* Espaço entre as imagens (opcional) */
+  margin-bottom: 20px;
+}
+
+.love .image-t .bottom-image {
+  position: relative;
+  top: 20px; /* Ajuste conforme necessário para a posição vertical */
+}
+
 /**Depoimentos*/
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
