@@ -19,80 +19,134 @@
     font-family: 'Merriweather', serif;
 }
 
-main>h1 {
-    font-family: var(--font-title);
-    margin: 50px 0px;
-}
-
-.container {
-    width: 45%;
-    min-width: 300px;
-}
-
-.wrapper {
-    background-color: #ffffff;
-    margin-bottom: 20px;
-    padding: 15px 40px;
-    border-radius: 5px;
-    box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
-}
-
-.toggle,
-.content {
-    font-family: "Poppins", sans-serif;
-}
-
-.toggle {
-    width: 100%;
-    background-color: transparent;
+#cards-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 16px;
-    color: #111130;
-    font-weight: 500;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 15px 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-.content {
-    position: relative;
-    font-size: 14px;
-    text-align: justify;
-    line-height: 30px;
-    height: 0;
+#article-container {
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    width: 300px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: all 1s;
+    cursor: pointer;
 }
 
-.content h3 {
-    font-size: 16px;
-    font-style: italic;
+.card img {
+    width: 100%;
+    height: auto;
 }
 
-.carousel-container {
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.hidden {
+    display: none;
+}
+
+#back-button {
+    display: block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back-button:hover {
+    background-color: #555;
+}
+
+#article-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+#article-content h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+}
+
+#article-content h3 {
+    color: #34495e;
+    margin-top: 20px;
+}
+
+#article-content p {
+    margin: 10px 0;
+}
+
+#article-content p strong {
+    color: #15EEA3; /* Alteração da cor para verde água */
+}
+
+/* Estilos específicos para o carrossel de cães */
+.carousel-container-dogs {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     overflow: hidden;
     position: relative;
+    margin-top: 50px; /* Exemplo de estilo específico para margem superior */
 }
 
-.carousel {
+.carousel-dogs {
     display: flex;
     overflow: hidden;
     width: 80%;
 }
 
-.carousel-inner {
+.carousel-inner-dogs {
     display: flex;
     transition: transform 0.3s ease;
 }
 
-.card {
+.carousel-button-dogs {
+    background-color: #fff;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.carousel-button-dogs.prev {
+    left: 10px;
+}
+
+.carousel-button-dogs.next {
+    right: 10px;
+}
+
+.card-dogs {
     min-width: 200px;
     border: 1px solid #ccc;
     padding: 16px;
@@ -102,90 +156,47 @@ main>h1 {
     position: relative;
 }
 
-.card h2 {
+.card-dogs h2 {
     margin: 0;
     font-size: 1.5em;
 }
 
-.card .details {
+.card-dogs .details {
     display: none;
     margin-top: 10px;
 }
 
-.card.expanded .details {
-    display: block;
-}
-
-.card.expanded {
+.card-dogs.expanded {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-    z-index: 1000; /* Aumentar para garantir que está acima do cabeçalho e rodapé */
+    z-index: 1000;
     background: white;
     padding: 20px;
     box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
-    max-height: 80vh; /* Limitar a altura máxima */
-    overflow-y: auto; /* Adicionar rolagem vertical se necessário */
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
-/* Estilos para o ícone de fechar */
-.close-icon {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    color: #999;
-    cursor: pointer;
+/* Outros estilos específicos para outros tipos de carrosséis (gatos, pássaros, etc.) podem seguir a mesma abordagem. */
+
+/* Exemplo de estilo para título específico */
+.title-dogs h1 {
+    margin-left: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: initial;
 }
 
-.carousel-button {
-    background-color: #fff;
-    border: none;
-    font-size: 2em;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
+/* Exemplo de estilo para informações específicas */
+.title-dogs #info {
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
 }
 
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-/* Adiciona uma margem superior para separar os carrosséis */
-.carousel-container {
-    margin-top: 50px;
-}
-
-/* Adiciona estilos específicos para os botões de navegação de cada carrossel */
-.carousel-button {
-    background-color: #fff;
-    border: none;
-    font-size: 2em;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-}
-
-.carousel-button.prev {
-    left: 10px;
-}
-
-.carousel-button.next {
-    right: 10px;
-}
-#result {
-    margin: 20px;
-}
-
-#infoFooter {
-    margin-left: 0 !important;
-}
+/* Estilos específicos para outros componentes podem seguir a mesma abordagem */
