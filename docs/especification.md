@@ -1,6 +1,6 @@
-## Descrição geral do produto
+# Descrição geral do produto
 
-### Requisitos Funcionais
+## Requisitos Funcionais
 |Código   | Funcionalidade | Descrição |
 |------|------------------------|------------|
 |RF1| Gerenciar Regras e Dicas de Viagem | O sistema deve permitir ao administrador o processamento de Inclusão, Alteração e Consulta pelo administrador |
@@ -26,13 +26,13 @@ Ao acessar a página Transporte, será exibo seções descrevendo os informaçõ
 
 Esta página HTML contém seções que fornecem informações e dicas úteis sobre como viajar com pets. Também inclui detalhes sobre vários tipos de acomodações e estabelecimentos relacionados.
 
-## Pesquisa 
+### Pesquisa 
 
 Ao acessar a página de destino, você encontrará um filtro que permite pesquisar estabelecimentos por tipo e cidade. A página também apresenta cards com informações detalhadas sobre cada estabelecimento específico.
 
 ![Titulo](img/destinos1.png)
 
-## Cadastro 
+### Cadastro 
 
 Ao acessar a página de Cadastro de Estabelecimento, você encontrará um formulario que permite cadastrar estabelecimentos.
 
@@ -41,7 +41,7 @@ Ao acessar a página de Cadastro de Estabelecimento, você encontrará um formul
 
 ## Descrição das estruturas:
 
-## Cadastro de usuário
+### Cadastro de usuário
 |  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
 |:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
 | ID          | Numero (Inteiro)   | Identificador único do usuário  | 0001                |
@@ -51,7 +51,7 @@ Ao acessar a página de Cadastro de Estabelecimento, você encontrará um formul
 | Senha       | Texto              | Senha do usuário	               | abC#768          |
 | Foto        | File               | Foto do usuário                 | https://i.imgur.com/z7mkc1I.jpg |
 
-## Cadastro de Estabelecimento
+### Cadastro de Estabelecimento
 |  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
 |:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
 | Nome do Estabelecimento       | Texto             | Nome do Estabelecimento                 | Casa PET |
@@ -68,7 +68,7 @@ Ao acessar a página de Cadastro de Estabelecimento, você encontrará um formul
 | Foto        | File              | Foto do estabelecimento                | https://i.imgur.com/JEzXkMF.jpg |
 | Alt Foto    | Texto             | Texto acessível para foto              | Foto da fachada do hotel com o nome Casa Pet |
 
-## Cadastro de Depoimento
+### Cadastro de Depoimento
 |  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
 |:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
 | ID               | Numero (Inteiro)  | Identificador  do comentario    | 0001                |
@@ -78,7 +78,7 @@ Ao acessar a página de Cadastro de Estabelecimento, você encontrará um formul
 | Data de Saida    | Texto             | Periodo da visita        |16/05/2023    |
 | Descrição        | Texto             | Descrição da experiencia do usuario   |  "Amei minha estadia em um lugar pet friendly incrível! O ambiente era acolhedor, a equipe era atenciosa e meu peludo foi tratado como um rei. Recomendo a todos!"    |
 
-### Requisitos Não Funcionais
+## Requisitos Não Funcionais
 | Código  | Restrição | Descrição |
 |------|------------------------|------------|
 |RF1| Ambiente | Interface responsiva adaptável a qualquer interface utilizada - Browser, Smartphone ou Tablet. |
@@ -89,14 +89,14 @@ Ao acessar a página de Cadastro de Estabelecimento, você encontrará um formul
 |RF6| Usabilidade | O sistema deve ter uma interface intuitiva e amigável, com elementos de design consistentes e feedback claro. |
 |RF7| Portabilidade | Garantir a compatibilidade com os principais navegadores da web, como Google Chrome, Mozilla Firefox, Safari e Microsoft Edge. |
 
-### Usuários 
-#### Descrição
+## Usuários 
+### Descrição
 | # | Ator | Definição |
 |------|------------------------|------------|
 |1| Usuário | Usuário responsável por cadastrar locais e/ou serviços pet, consultar, avaliá-los, cadastrar dados do seu próprio perfil, comentar, favoritar e denunciar os locais e/ou serviços pet. |
 |2| Administrador | Usuário gerente do sistema responsável pela avaliação de denúncias e bloqueio de usuários. Possui acesso geral ao sistema. |
 
-#### Características dos usuários
+### Características dos usuários
 | # | Ator | Frequência de uso | Nível de instrução | Proficiência na aplicação | Proficiência em informática |
 |---|------|-------------------|--------------------|---------------------------|-----------------------------|
 |1|Usuário|Diária em qualquer horário |Indefinido|Sim|Sistema|
