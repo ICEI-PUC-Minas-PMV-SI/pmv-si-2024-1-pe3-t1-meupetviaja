@@ -5,8 +5,6 @@ Neste projeto serão realizados dois tipos de testes:
  - O **Teste de Software**, que utiliza uma abordadem de caixa preta, e tem por objetivo verificar a conformidade do software com os requisitos funcionais e não funcionais do sistema.
  - O **Teste de Usabilidade**, que busca avaliar a qualidade do uso do sistema por um usuário do público alvo. 
 
-Se quiser conhecer um pouco mais sobre os tipos de teste de software, leia o documento [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/).
-
 A documentação dos testes é dividida nas seguintes seções:
 
  - [Plano de Testes de Software](#plano-de-testes-de-software)
@@ -85,9 +83,7 @@ A documentação dos testes é dividida nas seguintes seções:
 **Dados de entrada** | Inserção de dados válidos no formulário de login.
 **Página** | Destinos em MG
 
-
 ## Registro dos Testes de Software
-
 
 |**Caso de Teste**                                 |**CT-01 - Visualizar informações de regras de viagem com pet por diferentes meios de transporte**                                  |
 |---|---|
@@ -150,10 +146,6 @@ Pontos fortes do software - o usuário consegue: navegar entre as páginas, util
 Pontos fracos do software - os depoimentos não estão sendo alimentados dinamicamente ainda; quando o usuário é redirecionado para a página de uma cidade ou de um estabelecimento, as informações não estão sendo carregadas corretamente na versão hospedada do site, encontramos erro no envio e exibição de depoimentos de usuários anõnimos por conta da foto.
 Resolução dos pontos fracos - estamos buscando soluções para corrigir as falhas do software para garantir que o usuário tenha uma boa experiência ao navegar pelo site.
 
-## Testes de unidade automatizados (Opcional)
-
-Se o grupo tiver interesse em se aprofundar no desenvolvimento de testes de software, ele podera desenvolver testes automatizados de software que verificam o funcionamento das funções JavaScript desenvolvidas. Para conhecer sobre testes unitários em JavaScript, leia o documento  [Ferramentas de Teste para Java Script](https://geekflare.com/javascript-unit-testing/).
-
 
 # Testes de Usabilidade
 
@@ -176,12 +168,6 @@ Satisfação subjetiva: responde como o usuário avalia o sistema com relação 
 Tempo para conclusão da tarefa: em segundos, e em comparação com o tempo utilizado quando um especialista (um desenvolvedor) realiza a mesma tarefa.
 
 Objetivando respeitar as diretrizes da Lei Geral de Proteção de Dados, as informações pessoais dos usuários que participaram do teste não foram coletadas, tendo em vista a ausência de Termo de Consentimento Livre e Esclarecido.
-
-
-Apresente os cenários de testes utilizados na realização dos testes de usabilidade da sua aplicação. Escolha cenários de testes que demonstrem as principais histórias de usuário sendo realizadas. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
-
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
-
 
 ## Cenários de Teste de Usabilidade
 
@@ -208,8 +194,6 @@ Cenário 1: Você é uma pessoa que deseja viajar para Ouro Preto com o seu pet.
     Comentários dos usuários: Fiquei satisfeito com a facilidade de navegação e usabilidade do site. Encontrei as informações que precisava sem dificuldades, e a interface tornou a experiência agradável.
 
 
-
-
 Cenário 2:  Você é uma pessoa que viajou para uma cidade mineira e deseja deixar o seu depoimento sobre um estabelecimento pet friendly. Faça login na sua conta do site e deixe o seu depoimento no estabelecimento visitado.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
@@ -225,8 +209,6 @@ Cenário 2:  Você é uma pessoa que viajou para uma cidade mineira e deseja dei
     Comentários dos usuários: O site foi bem projetado, com uma organização clara e fácil de entender. Foi simples realizar as tarefas propostas, e encontrei todas as funcionalidades de maneira rápida e eficiente, mas acredito que poderia 
 
 
-
-    
 Cenário 3: Você é um dono de um local pet friendly e deseja cadastrar seu estabelecimento no site para conseguir mais clientes e maior visibilidade.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
@@ -242,9 +224,7 @@ Cenário 3: Você é um dono de um local pet friendly e deseja cadastrar seu est
     Comentários dos usuários: A usabilidade do site foi muito boa, os botões e links estavam bem posicionados, facilitando a navegação e evitando confusões, porém o endereço poderia ser preenchido automaticamente ao digitar o CEP.
 
 
-
 ## Avaliação dos Testes de Usabilidade
-
 
 Tomando como base os resultados obtidos, foi possível verificar que a aplicação web apresenta bons resultados quanto à taxa de sucesso na interação dos usuários, tendo em vista que os cenários propostos foram concluídos com sucesso.
 
@@ -253,6 +233,3 @@ Além disso, a aplicação obteve também uma elevada satisfação subjetiva dos
 Com relação ao tempo para conclusão de cada tarefa/cenário, notamos discrepância entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Tal discrepância, em certa medida, é esperada, tendo em vista que o desenvolvedor já tem prévio conhecimento de toda a interface da aplicação, do posicionamento dos elementos, lógica de organização das páginas, etc.
 
 Contudo, tendo em vista que a diferença foi relevante (por exemplo, 70.29 segundos — média usuários — contra 31.94 segundos — especialista — no cenário dois), e ainda os comentários feitos por alguns usuários, entendemos haver oportunidades de melhoria na usabilidade da aplicação.
-
-
-
