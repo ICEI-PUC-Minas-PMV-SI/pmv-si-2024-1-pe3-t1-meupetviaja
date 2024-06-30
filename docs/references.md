@@ -1,19 +1,9 @@
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizadas no desenvolvimento do trabalho.
+**[1]** - _MACHADO, B. L, Turismo e o segmento pet friendly: um estudo sobre o setor hoteleiro de Belo Horizonte / MG. HOSPITALIDADE, São Paulo, Volume 14, n.02, p 1-14, agosto de 2017. Disponível em: https://www.revhosp.org/hospitalidade/article/view/728/765. Acesso em: 22 Fev. 2024_
 
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/referencias/)
+**[2]** - _FERREIRA, J. et al. PET FRIENDLY: um estudo aplicado à hotelaria. PET FRIENDLY um estudo aplicado à hotelaria.pdf, mar. 23DC._
 
-Exemplos de referências bibliográficas:
+**[3]** - _LECKAR, Felipe et al. GOL Linhas Aéreas: modelo do serviço de transporte de pet em aeronaves. 2022. 129 f. Trabalho de Conclusão de Curso (Especialização em Gestão do Negócio) - Fundação Dom Cabral; Instituto de Transporte e Logística, Curitiba, 2022._
 
-**[1]** - _ELMASRI, Ramez; NAVATHE, Sham. **Sistemas de banco de dados**. 7. ed. São Paulo: Pearson, c2019. E-book. ISBN 9788543025001._
-
-**[2]** - _COPPIN, Ben. **Inteligência artificial**. Rio de Janeiro, RJ: LTC, c2010. E-book. ISBN 978-85-216-2936-8._
-
-**[3]** - _CORMEN, Thomas H. et al. **Algoritmos: teoria e prática**. Rio de Janeiro, RJ: Elsevier, Campus, c2012. xvi, 926 p. ISBN 9788535236996._
-
-**[4]** - _SUTHERLAND, Jeffrey Victor. **Scrum: a arte de fazer o dobro do trabalho na metade do tempo**. 2. ed. rev. São Paulo, SP: Leya, 2016. 236, [4] p. ISBN 9788544104514._
-
-**[5]** - _RUSSELL, Stuart J.; NORVIG, Peter. **Inteligência artificial**. Rio de Janeiro: Elsevier, c2013. xxi, 988 p. ISBN 9788535237016._
-
+**[4]** - _NEPOMUCENO, Karinna Beltramello. A perspectiva pet friendly e a escolha de um destino de viagem. 2020. 95 f. Trabalho de Conclusão de Curso (Graduação em Turismo) - Faculdade de Turismo e Hotelaria, Universidade Federal Fluminense, 2020._
